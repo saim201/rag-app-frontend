@@ -161,7 +161,7 @@ export function SearchChat({ currentDepartment }: SearchChatProps) {
                                   className="w-full px-4 py-3 flex items-center justify-between text-left hover:bg-gray-50 transition-colors cursor-pointer"
                                 >
                                   <span className="text-sm text-gray-700 font-medium">
-                                    {source.source}
+                                    {idx + 1}. {source.source}
                                     {getSourceLocation(source) && (
                                       <span className="text-gray-400 font-normal ml-2">
                                         · {getSourceLocation(source)}
