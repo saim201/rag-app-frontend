@@ -1,6 +1,7 @@
 import type { SearchResponse, UploadResponse, DocumentsResponse } from '../types';
 
-const API_BASE_URL = 'http://localhost:9000';
+// Use environment variable, fallback to localhost for development
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:9000';
 
 export async function searchDocuments(
   query: string,
